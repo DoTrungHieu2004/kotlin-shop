@@ -1,0 +1,40 @@
+# --- System / IDE ---
+.DS_Store
+*.iml
+.idea/
+.gradle/
+build/
+captures/
+.externalNativeBuild/
+.cxx/
+local.properties
+
+# --- Android / Jetpack Compose Specific ---
+# Exclude all build outputs
+**/build/
+**/intermediate/
+**/outputs/
+
+# Exclude Generated Kotlin/Compose Metadata
+.kotlin/
+*.hprof
+
+# --- SECURITY: Secrets & Credentials ---
+*.jks
+*.keystore
+*.p12
+
+secrets.properties
+google-services.json
+firebase-crashlytics-config.json
+
+# --- Tooling & Testing ---
+# Benchmark outputs
+*.benchmark.json
+# Layout Inspector captures
+*.li
+
+# --- Version Control Safety ---
+# Avoid committing files that cause merge conflicts in local setups
+.navigation/
+assetpackbundle.zip
