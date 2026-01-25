@@ -37,7 +37,13 @@ android {
         jvmToolchain(17)
     }
     buildFeatures {
+        buildConfig = true
         compose = true
+    }
+    defaultConfig {
+        buildConfigField("String", "BASE_URL",
+            (project.findProperty("SHOP_BASE_URL") ?: "\"\"") as String
+        )
     }
 }
 
