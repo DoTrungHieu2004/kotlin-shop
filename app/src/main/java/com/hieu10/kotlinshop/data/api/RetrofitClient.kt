@@ -1,6 +1,7 @@
 package com.hieu10.kotlinshop.data.api
 
 import com.hieu10.kotlinshop.BuildConfig
+import com.hieu10.kotlinshop.data.api.service.AuthAPIService
 import com.squareup.moshi.KotlinJsonAdapterFactory
 import com.squareup.moshi.Moshi
 import okhttp3.OkHttpClient
@@ -27,5 +28,10 @@ object RetrofitClient {
             .client(okHttpClient)
             .addConverterFactory(MoshiConverterFactory.create(moshi))
             .build()
+    }
+
+    // API services
+    val authService: AuthAPIService by lazy {
+        instance.create(AuthAPIService::class.java)
     }
 }
