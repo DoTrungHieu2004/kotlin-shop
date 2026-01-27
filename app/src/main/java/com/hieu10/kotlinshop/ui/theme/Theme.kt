@@ -239,7 +239,7 @@ private val highContrastDarkColorScheme = darkColorScheme(
 )
 
 @Composable
-fun AppTheme(
+fun KotlinShopTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
     dynamicColor: Boolean = true,
     content: @Composable () -> Unit
