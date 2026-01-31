@@ -1,0 +1,22 @@
+# Build artifacts
+/build
+*.apk
+*.ap_
+*.dex
+bin/
+
+# Android Studio/IDE
+.gradle/
+.idea/
+*.iml
+local.properties
+
+# System files
+captures/
+.DS_Store
+thumbs.db
+
+# Secrets/keys
+*.jks
+*.keystore
+google-services.json
