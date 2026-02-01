@@ -17,6 +17,9 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
+        // Secrets
+        buildConfigField("String", "BASE_URL", "\"${project.findProperty("BASE_URL")}\"")
     }
 
     buildTypes {
@@ -33,6 +36,7 @@ android {
         targetCompatibility = JavaVersion.VERSION_11
     }
     buildFeatures {
+        buildConfig = true
         compose = true
     }
 }
